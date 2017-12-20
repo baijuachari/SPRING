@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="employeeBean" class="com.spring.core.ref.Employee">
+		<property name="empId" value="123"></property>
+		<property name="name" value="Samule Jackson"></property>
+		<property name="age" value="27"></property>
+		<property name="salary" value="128500"></property>
+		<property name="address" ref="address"></property>
+	</bean>
+
+	<bean id="address" class="com.spring.core.ref.Address">
+		<property name="houseno" value="123"></property>
+		<property name="city" value="Boston"></property>
+		<property name="state" value="MA"></property>
+		<property name="zipcode" value="538921"></property>
+	</bean>
+</beans>
